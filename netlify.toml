@@ -1,5 +1,5 @@
 [build]
   publish = "output/"
-  command = "sus.py"
+  command = "sus"
 [context.production]
   environment = { PYTHON_VERSION = "3.7" }
