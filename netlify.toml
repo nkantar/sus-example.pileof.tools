@@ -1,3 +1,5 @@
 [build]
   publish = "output/"
   command = "pip install sus && sus.py"
+[context.production]
+  environment = { PYTHON_VERSION = "3.8" }
