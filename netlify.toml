@@ -2,4 +2,4 @@
   publish = "output/"
   command = "sus.py"
 [context.production]
-  environment = { PYTHON_VERSION = "3.8" }
+  environment = { PYTHON_VERSION = "3.7" }
