@@ -1,4 +1,0 @@
-:9020 {
-	root * /srv
-	file_server
-}
