@@ -1,0 +1,18 @@
+z480kks4w400gg0ks8ksgoc4.5.78.24.144.sslip.io:80,
+z480kks4w400gg0ks8ksgoc4.5.78.24.144.sslip.io:443,
+sus-example.nkantar.com:80,
+sus-example.nkantar.com:443 {
+    root * /srv
+    file_server
+
+    @plausible path /js/script.js /api/event
+    handle @plausible {
+        rewrite /js/script.js /js/script.js
+        reverse_proxy https://plausible.io {
+            header_up Host {http.reverse_proxy.upstream.hostport}
+            transport http {
+                tls
+            }
+        }
+    }
+}
