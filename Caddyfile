@@ -1,7 +1,7 @@
 z480kks4w400gg0ks8ksgoc4.5.78.24.144.sslip.io:80,
 z480kks4w400gg0ks8ksgoc4.5.78.24.144.sslip.io:443,
-sus-example.nkantar.com:80,
-sus-example.nkantar.com:443 {
+sus-example.pileof.tools:80,
+sus-example.pileof.tools:443 {
     root * /srv
     file_server
 
